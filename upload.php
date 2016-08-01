@@ -3,6 +3,7 @@
 // A list of permitted file extensions
 $allowed = array('png', 'jpg', 'gif','zip','pdf','doc','docx','xls','rar','zip','txt');
 $fecha=date('Y-m-d');
+$hora=time();
 if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
 
 	$extension = pathinfo($_FILES['upl']['name'], PATHINFO_EXTENSION);
